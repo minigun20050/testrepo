@@ -1,0 +1,29 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+table {
+    width: 100%;
+}
+
+table, th, td {
+    border: 1px solid rgb(165, 0, 157);
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 5px;
+}
+
+thead {
+    background-color: rgb(15, 172, 172);
+}
+
+tbody {
+    background-color: rgb(179, 224, 224);
+}
+
+tfoot {
+    background-color: rgb(97, 104, 104);
+}
