@@ -1,0 +1,25 @@
+let x
+let y
+let z
+let a //dodawanie
+let b //odejmowanie
+let c //mnozenie
+let d //dzielenie
+x = prompt('x = ')
+y = prompt('y = ')
+z = prompt('z = ')
+x = ((+x) << 0)
+y = ((+y) << 0)
+z = ((+z) << 0)
+a = ((x) + (y) + (z))
+console.log((x) , " + " , (y) , " + " , (z) , "= " , (a)) //dodawanie
+b = ((x) - (y) - (z))
+console.log((x) , " - " , (y) , " - " , (z) , "= " , (b)) //odejmowanie
+c = ((x) * (y) * (z))
+console.log((x) , " * " , (y) , " * " , (z) , "= " , (c)) //mnozenie
+if (c == 0)
+console.log("cant /0")
+else {
+d = ((x) / (y) / (z))
+console.log((x) , " : " , (y) , " : " , (z) , "= " , (d)) } //dzielenie) 
+console.log("max number is: ", (Math.max(x, y, z))) //max number
