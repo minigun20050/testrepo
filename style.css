@@ -1,0 +1,89 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body > header {
+    height: 10vh;
+    line-height: 10hv;
+    background-color: rgb(34, 29, 27);
+    color: rgb(200, 209, 200);
+}
+body > header > h1 {
+    text-align: center;
+}
+
+nav {
+    background-color: rgb(48, 41, 38);
+    min-height: 5vh;
+}
+nav > ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+nav > ul > li {
+    width: 10vw;
+}
+nav a {
+    display: block;
+    line-height: 5vh;
+    text-decoration: none;
+    text-align: center;
+    color: rgb(200, 209, 200);
+}
+nav a:hover {
+    background-color: rgb(88, 76, 71);
+}
+
+main {
+    display: flex;
+}
+main > aside {
+    width: 15vw;
+    background-color: rgb(48, 41, 38);
+}
+main > aside > ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+}
+main > aside > ul > li {
+    width: 100%;
+}
+main > aside a {
+    display: block;
+    line-height: 5vh;
+    text-decoration: none;
+    text-align: center;
+    color: rgb(200, 209, 200);
+}
+main > aside a:hover {
+    background-color: rgb(88, 76, 71);
+}
+main > article {
+    width: 85vw;
+    background-color: rgb(34, 29, 27);
+    color: rgb(200, 209, 200);
+}
+main > article h2, main > article h3 {
+    text-align: center;
+    padding-bottom: 5px;
+}
+main > article section {
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: justify;
+}
+main > article section > p {
+    padding-bottom: 5px;
+}
+
+footer {
+    background-color: rgb(48, 41, 38);
+    height: 5vh;
+    line-height: 5vh;
+    color: rgb(200, 209, 200);
+    text-align: center;
+}
