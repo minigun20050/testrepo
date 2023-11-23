@@ -101,4 +101,12 @@ main > article > form > .form-buttons {
 main > article > form .form-buttons > input {
     padding: 5px;
     width: 40%;
+    border: 1px solid #222;
+    border-radius: 5px;
+}
+main > article > form .form-buttons > input[type=submit] {
+    background-color: #0f0;
+}
+main > article > form .form-buttons > input[type=reset] {
+    background-color: #f00;
 }
