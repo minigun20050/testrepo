@@ -93,6 +93,8 @@ main > article > form .form-field > .form-input {
 main > article > form .form-field > .form-input > input {
     width: 70%;
     padding: 5px;
+    border: 1px dashed #333;
+    border-radius: 5px 10px;
 }
 main > article > form > .form-buttons {
     text-align: center;
