@@ -1,34 +1,17 @@
-// function factorial(number) {
-//     number = parseInt(number);
-//     if(!isNaN(number) && number >= 0) {
-//         if(number === 0) {
-//             return 1;
-//         }
-//         else {
-//             return number * factorial(number - 1);
-//         }
-//     }
-// }
-
-// factorial(prompt("Wprowadz wartosc liczbowa"));
-
-// function fibonacci(n) {
-//     n = parseInt(n);
-//     if(!isNaN(n)) {
-//         if(n < 2)
-//         return n;
-//     else
-//         return fibonacci(n - 2) + fibonacci(n - 1);
-//     }
-// }
-
-let n = parseInt(prompt("Wprowadz dodatnia wartosc liczbowa"));
-if(n <= 0)
-    console.log("Miala byc dodatnia... bandyto!");
-else {
-    for (let i = 0; i < n; i++) {
-        console.log(fibonacci(i));
-    }
+let arr = [];
+// let arr2 = new Array();
+/*
+for(let i = 0; i < 12; i++) {
+    arr[i] = i + ((i > 0) ? (arr[i - 1]) : i);
 }
-
-fibonacci(5);
+for(let i = 0; i < arr.length - 1; i++) {
+    document.writeln(arr[i]);
+}
+*/
+for(let i = 0; i < 10; i++) {
+    arr[i] = Math.round(Math.random() * 100);
+}
+arr.sort((a, b) => b - a);
+for(let i = 0; i < arr.length - 1; i++) {
+    document.writeln(arr[i]);
+}
