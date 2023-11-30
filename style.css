@@ -1,114 +1,103 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 body > header {
-    height: 10vh;
-}
-body > header > h1 {
-    line-height: 10vh;
-    text-align: center;
-    color: #252525;
+  height: 10vh;
+  line-height: 10vh;
+  text-align: center;
 }
 body > nav {
-    min-height: 5vh;
-    background-color: #ccc;
+  height: 5vh;
+  background-color: #ccc;
 }
 body > nav > ul {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-    list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
 }
 body > nav > ul > li {
-width: 10vw;
-line-height: 5vh;
+  width: 10vw;
 }
 body > nav > ul > li a {
-    display: block;
-    text-align: center;
-    text-decoration: none;
-    color: #252525;
+  display: block;
+  text-align: center;
+  height: 5vh;
+  line-height: 5vh;
+  text-decoration: none;
+  color: #235;
+  cursor: default;
+}
+body > nav > ul > li:hover {
+  background-color: #def;
+}
+body > nav > ul > li:hover > ul {
+  display: block;
+}
+body > nav > ul > li > ul {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  position: absolute;
+  background-color: #ccc;
+  display: none;
+}
+body > nav > ul > li > ul > li {
+  width: 10vw;
+}
+body > nav > ul > li > ul > li:hover {
+  background-color: #def;
 }
 body > footer {
-    text-align: center;
-    height: 5vh;
-    line-height: 5vh;
-    color: #252525;
+  height: 5vh;
+  line-height: 5vh;
+  text-align: center;
 }
 
 main {
-    display: flex;
+  display: flex;
+  flex-direction: row;
 }
 main > aside {
-    width: 15vw;
-    background-color: #ccc;
+  width: 15vw;
+  text-align: justify;
+  padding: 5px;
 }
 main > aside > ul {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: space-evenly;
-    list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
 }
 main > aside > ul > li {
-    width: 100%;
-    line-height: 5vh;
+  width: 100%;
 }
 main > aside > ul > li a {
-    display: block;
-    text-align: center;
-    text-decoration: none;
-    color: #252525;
+  display: block;
+  text-align: center;
+  height: 5vh;
+  line-height: 5vh;
+  text-decoration: none;
+}
+main > aside > ul > li a:link {
+  color: #975;
+  background-color: #fff;
+}
+main > aside > ul > li a:visited {
+  color: #543;
+  background-color: #ddd;
+}
+main > aside > ul > li a:hover {
+  cursor: crosshair;
+}
+main > aside > ul > li a:active {
+  font-weight: bold;
 }
 main > article {
-    width: 85vw;
-}
-main > article > form {
-    margin: auto;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    width: 60vw;
-}
-main > article > form .form-field {
-    display: flex;
-    flex-direction: row;
-}
-main > article > form .form-field > .form-label {
-    width: 40%;
-    text-align: right;
-}
-main > article > form .form-field > .form-label > label {
-    display: block;
-    padding: 15px;
-}
-main > article > form .form-field > .form-input {
-    width: 60%;
-    text-align: center;
-    padding: 10px;
-}
-main > article > form .form-field > .form-input > input {
-    width: 70%;
-    padding: 5px;
-    border: 1px dashed #333;
-    border-radius: 5px 10px;
-}
-main > article > form > .form-buttons {
-    text-align: center;
-    padding: 10px;
-}
-main > article > form .form-buttons > input {
-    padding: 5px;
-    width: 40%;
-    border: 1px solid #222;
-    border-radius: 5px;
-}
-main > article > form .form-buttons > input[type=submit] {
-    background-color: #0f0;
-}
-main > article > form .form-buttons > input[type=reset] {
-    background-color: #f00;
+  width: 85vw;
+  padding: 5px;
 }
