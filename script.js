@@ -1,17 +1,62 @@
-let arr = [];
-// let arr2 = new Array();
-/*
-for(let i = 0; i < 12; i++) {
-    arr[i] = i + ((i > 0) ? (arr[i - 1]) : i);
+// const obiekt = {
+//     pole: wartosc,
+//     metoda: function() {
+//     }
+// };
+
+// const motocykl = {
+//     kolor: "czarny",
+//     pojemnosc: "1290cc",
+//     marka: "KTM",
+//     model: "Super Duke",
+//     jedz: function(kierunek) {
+//         return "Motocykl jedzie w " + this.kierunek;
+//     },
+//     uruchomSilnik: function() {
+//         return "Silnik" + this.marka + " " + this.model + " uruchomiony."
+//     }
+// };
+
+// class Motocykl {
+//     constructor(kolor, pojemnosc, marka, model) {
+//         this.kolor = kolor;
+//         this.pojemnosc = pojemnosc;
+//         this.marka = marka;
+//         this.model = model;
+//     }
+//     jedz(kierunek) {
+//         return "Motocykl jedzie w " + this.kierunek;
+//     }
+//     uruchomSilnik() {
+//         return "Silnik" + this.marka + " " + this.model + " uruchomiony."
+//     }
+// }
+// const ktmSuperDuke = new Motocykl("czarny", "1290cc", "KTM", "Super Duke");
+// const hondaAfricaTwin = new Motocykl("czarny", "998cc", "Honda", "Africa Twin");
+
+// ktmSuperDuke.uruchomSilnik();
+
+class matma {
+    constructor(x, y) {
+        this.x = x;
+        this.y = y;
+    }
+    minus() {
+        return this.x - this.y;
+    }
+    plus() {
+        return this.x + this.y;
+    }
+    dz() {
+        return this.x / this.y;
+    }
+    mn() {
+        return this.x * this.y;
+    }
 }
-for(let i = 0; i < arr.length - 1; i++) {
-    document.writeln(arr[i]);
-}
-*/
-for(let i = 0; i < 10; i++) {
-    arr[i] = Math.round(Math.random() * 100);
-}
-arr.sort((a, b) => b - a);
-for(let i = 0; i < arr.length - 1; i++) {
-    document.writeln(arr[i]);
-}
+const pier = new matma();
+const drug = new matma();
+const tr = new matma();
+const czw = new matma();
+
+();
