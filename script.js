@@ -54,9 +54,7 @@ class matma {
         return this.x * this.y;
     }
 }
-const pier = new matma();
-const drug = new matma();
-const tr = new matma();
-const czw = new matma();
-
-();
+const pier = new matma(1, 3);
+const drug = new matma(5, 6);
+const tr = new matma(4, 4);
+const czw = new matma(4, 4);
