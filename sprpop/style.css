@@ -1,0 +1,72 @@
+li {
+    height: 5vh;
+    line-height: 5vh;
+    text-align: center;
+    text-decoration: none;
+    color: #226;
+}
+input {
+    margin-inline: 5px;
+    width: 70%;
+    outline-width: 1px;
+    outline-color: rgb(51, 51, 255);
+    outline-style: solid;
+
+    /* outline-style: dashed; */
+}
+button {
+    margin-inline: 5px;
+    width: 30%;
+    outline-width: 1px;
+    outline-color: rgb(51, 51, 255);
+    outline-style: solid;
+    
+    /* outline-style: dashed; */
+}
+body {
+    height: max-content;
+}
+header {
+    height: 10vh;
+    background-color: rgb(204, 255, 255);
+}
+header > h1 {
+    line-height: 10vh;
+    text-align: center;
+}
+nav {
+    background-color: #dff;
+    /* display: ; */
+}
+nav > form {
+    margin-right: 5%;
+    width: 25%;
+}
+main {
+    height: fit-content;
+}
+body > nav > ul {
+    background-color: #dff;
+    width: 20vw;
+}
+body > main > article {
+width: 80wv;
+}
+body > main > article > form {
+    outline-width: 1px;
+    outline-color: #226;
+    outline-style: solid;
+    width: 70%;
+    align-items: center;
+    margin-inline: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+    align-self: center;
+}
+footer {
+    height: 5vh;
+    line-height: 5vh;
+    text-align: center;
+    background-color: #dff;
+}
