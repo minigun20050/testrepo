@@ -9,19 +9,20 @@ input {
 
 section {
   padding: 10px;
-  width: 100vh;
-  height: 52vh;
+  width: 70vh;
+  height: 53vh;
   border: 1px solid #222;
+  border-radius: 100px;
 }
 section > div {
-  padding: 5px;
+
   text-align: center;
 }
 section > div > input {
-  width: 40%;
-  padding: 20px;
+  width: 80%;
+
 }
 section > div > div > input {
-  width: 10%;
-  padding: 20px;
+  width: 20%;
+  height: 11vh;
 }
