@@ -1,0 +1,105 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body > header {
+    height: 10vh;
+    line-height: 10vh;
+    background-color: rgb(150, 150, 209);
+}
+
+body > main > aside {
+    display: none;
+}
+
+body > header > nav {
+    background-color: rgb(150, 150, 209);
+}
+body > header > nav  #openMenu {
+    margin: 1vh;
+    padding: 1vh;
+}
+body > header > nav > #openMenu:focus + ul {
+    display: flex;
+    position: absolute;
+    width: 100%;
+}
+body > header > nav > ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    background-color: rgb(150, 150, 209);
+}
+body > header > nav > ul > li {
+    width: 100%;
+}
+body > header > nav a {
+    display: block;
+    line-height: 5vh;
+    text-decoration: none;
+    text-align: center;
+}
+body > header > nav a:hover {
+    background-color: rgb(150, 209, 150);
+}
+body > header > nav > ul {
+    display: none;
+}
+
+footer {
+    background-color: rgb(150, 150, 209);
+    line-height: 5vh;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+@media only screen and (min-width: 350px) {
+  body > main > aside {
+  display: flex;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+    body > header > h1 {
+        display: none;
+    }
+    body > header > nav {
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 640px) {
+    body > header > h1 {
+      text-align: center;
+    }
+    body > main > aside {
+      display: flex;
+    }
+}
+  
+
+@media only screen and (max-width: 992px) {
+    body > main > aside {
+    display: none;
+    }
+    body > header > h1 {
+        text-align: left;
+    }
+}
+
+@media only screen and (max-width: 1920px) {
+    body > main > aside {
+    display: none;
+    }
+    body > header > h1 {
+        text-align: left;
+    }
+    body > main > img {
+        display: none;
+        position: absolute; right:0%;
+    }
+}
