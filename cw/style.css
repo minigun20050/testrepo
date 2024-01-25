@@ -1,0 +1,142 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    text-align: center;
+    padding: 15px;
+}
+
+body {
+    background-color: lightblue;
+}
+
+header {
+    background-color:powderblue;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    background-color:aqua;    
+}
+
+#imageGallery {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 25px;
+    padding: 10px;
+}
+#imageGallery .image-card {
+    box-shadow: 0 0 5px #000; 
+}
+#imageGallery .image-card > img {
+    display: block;
+    margin: auto;
+    padding: 5px;
+}
+#imageGallery .image-card .description {
+    text-align: center;
+    padding: 5px;
+}
+#imageGallery .image-card:hover {
+    box-shadow: 0 0 15px #000;
+}
+
+@media only screen and (min-width: 0px) {
+    #imageGallery {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 15px;
+        padding: 10px;
+    }
+    #imageGallery .image-card .description {
+        text-align: center;
+    }
+    #imageGallery .image-card {
+        width: 210px;
+        height: 290px;
+        margin: auto;
+    }
+}
+@media only screen and (min-width: 800px) {
+    #imageGallery {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        padding: 10px;
+    }
+    #imageGallery .image-card .description {
+        text-align: center;
+    }
+    #imageGallery .image-card {
+        width: 250px;
+        height: 280px;
+        margin: auto;
+    }
+}
+@media only screen and (min-width: 992px) {
+    #imageGallery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+        padding: 10px;
+    }
+    #imageGallery .image-card .description {
+        text-align: center;
+    }
+    #imageGallery .image-card {
+        width: 250px;
+        height: 280px;
+        margin: auto;
+    }
+}
+@media only screen and (min-width: 1280px) {
+    #imageGallery {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 15px;
+        padding: 10px;
+    }
+    #imageGallery .image-card .description {
+        text-align: center;
+    }
+    #imageGallery .image-card {
+        width: 270px;
+        height: 280px;
+        margin: auto;
+    }
+}
+@media only screen and (min-width: 1600px) {
+    #imageGallery {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 15px;
+        padding: 10px;
+    }
+    #imageGallery .image-card {
+        width: 280px;
+        height: 280px;
+        margin: auto;
+    }
+}
+@media only screen and (min-width: 1920px) {
+    #imageGallery {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 15px;
+        padding: 10px;
+    }
+    #imageGallery .image-card .description {
+        text-align: center;
+    }
+    #imageGallery .image-card {
+        width: 300px;
+        height: 280px;
+        margin: auto;
+    }
+}
