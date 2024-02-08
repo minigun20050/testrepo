@@ -2,76 +2,57 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    background-color: wheat;
 }
 
-body {
-    background-color: #c5c5c5;
-}
 body > header {
     height: 10vh;
     line-height: 10vh;
-    background-image: conic-gradient(red 20%, yellow 75%, rgba(0, 0, 0, 0.5) 80%);
 }
-body > header:hover {
-    height: 10vh;
-    line-height: 10vh;
-    background-image: conic-gradient(rgba(0, 0, 0, 0.5) 20%, yellow 25%, red 80%);
-}
-body > nav {
-    min-height: 5vh;
-    line-height: 5vh;
-}
-body > footer {
-    height: 5vh;
-    line-height: 5vh;
+body > header > h1 {
+    color: #fff;
     text-align: center;
-    background-image: linear-gradient(red, yellow, green);
-}
-body > footer:hover {
-    height: 5vh;
-    line-height: 5vh;
-    text-align: center;
-    background-image: linear-gradient(green, yellow, red);
+    font-size: 3rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: 0px 0px 15px rgb(138, 0, 143), 2px 2px 2px rgb(111, 0, 255), -2px -2px 2px #040;
 }
 
-main {
-    display: flex;
-}
-main > aside {
-    width: 15vw;
-}
-main > aside > ul {
-    display: flex;
-    flex-direction: column;
-    list-style-type: none;
-}
-main > aside > ul > li {
-    text-align: center;
-    height: 5vh;
-    line-height: 5vh;
-    background-image: linear-gradient(red, yellow, green);
-}
-main > aside > ul > li:hover {
-    text-align: center;
-    height: 5vh;
-    line-height: 5vh;
-    background-image: linear-gradient(green, yellow, red);
-}
-main > aside > ul > li > a {
-    text-decoration: none;
-    display: block;
-}
-main > article {
-    width: 85vw;
+main > div {
+    width: 50vw;
+    margin: auto;
+    padding: 20px;
     text-align: justify;
-    padding-left: 10px;
-    padding-right: 10px;
-    background-image: linear-gradient(red, yellow, green);
+    margin-top: 100px;
+    box-shadow: 0px 0px 20px 10px #460080 inset;
+    border: 1px solid #771a94;
+    border-radius: 15px;
 }
-main > article:hover {
-    width: 85vw;
-    text-align: justify;
-    padding-left: 10px;
-    padding-right: 10px;
-    background-image: linear-gradient(green, yellow, red);
+
+body > header > p > button {
+    text-align: center;
+    padding: 10px;
+    margin-left: 10px;
+    box-shadow: 0px 0px 20px 10px #460080;
+    background-color: white;
+}
+
+body > main > img {
+    padding: 10px;
+    display: table-row;
+    margin: auto;
+    box-shadow: 0px 0px 50px 5px #000000 inset;
+}
+body > main > img:hover {
+    width: 300px;
+    height: 300px;
+}
+
+body > footer {
+    text-align: center;
+}
+ul {
+    display: none;
+}
+body > header > p > button:hover {
+    margin-left: 200px;
 }
