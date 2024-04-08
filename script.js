@@ -1,104 +1,38 @@
-class Animal {
-    constructor(eat, sound) {
-        this.eat = eat;
-        this.sound = sound;
-    }
-    makeSound() {
-        return this.sound;
-    }
-    takeEat() {
-        return this.eat;
-    }
-}
+// let text = 'Chuck Norris tells Simon what to do.' +
+//  'What’s the strongest part of Chuck Norris? His opinion.';
+// // let textObject = new String('Ala ma kota, a sierotka ma rysia' +
+// // 'What’s the strongest part of Chuck Norris? His opinion.');
+// // console.log(text == textObject);
+// /*console.log(text.length);
+// console.log(text.charAt(4));
+// console.log(text.at(-3));
+// console.log(text.slice(7, 69));
+// console.log(text.slice(7, -69));
+// console.log(text.substring(7, 69));
+// console.log(text.substr(7, 69));
+// console.log(text.toUpperCase(7, 69));
+// console.log(text.toLowerCase(7, 69));
+// console.log(text.concat(' ', 'The flu gets a Chuck Norris shot every year.'));
+// // bla-bla-bla
+// console.log(text.replaceAll('Chuck Norris', '🧔'));
+// console.log(text.split(' ')); */
+// console.log(text.match('His'));
+// console.log(Array.from(text.matchAll('His')));
+// console.log((text.search('of')));
+// console.log((text.indexOf('of')));
 
-class Dog extends Animal {
-    constructor(eat, sound, color) {
-        super(eat, sound);
-        this.color = color;
-    }
-    makeSound(times = 1) {
-        let i = 1;
-        let sound = '';
-        do {
-            sound += this.sound;
-            i++;
-        } while(i < times);
-        return sound;
-    }
-}
+// console.log(text.search(/of/));
+// console.log(Array.from(text.matchAll(/of/g)));
+// console.log(text.search(/of/));
+// console.log(text.indexOf(/of/));
 
-const d1 = new Dog('🥩', 'Woof!', 'czarny');
-d1.makeSound(2);
 
-class Fish extends Animal {
-    constructor(eat, sound, color, swim) {
-        super(eat, sound);
-        this.color = color;
-        this.swim = swim;
-    }
-    makeSound(times = 1) {
-        let i = 1;
-        let sound = '';
-        do {
-            sound += this.sound;
-            i++;
-        } while(i < times);
-        return sound;
-    }
-    doSwim(times = 1) {
-        let i = 1;
-        let swim = '';
-        do {
-            swim += this.swim;
-            i++;
-        } while(i < times);
-        return swim;
-    }
-}
 
-const d2 = new Fish('🥖', 'Bul ', 'biała', 'swimming ');
-d2.makeSound(2);
 
-class Worker {
-    constructor(name, surname, total) {
-        this.name = name;
-        this.surname = surname;
-        this.total = total;
-    }
-    totalYear() {
-        let total = 0;
-        let i = 0;
-        total += this.total;
-        i = 12*total;
-        return i;
-    }
-}
-
-const d3 = new Worker('Steve', 'Klubnika', 20000);
-
-class Manager extends Worker {
-    constructor(name, surname, total, tips) {
-        super(name, surname, total);
-        this.tips = tips;
-    }
-    totalYear() {
-        let total = 0;
-        let i = 0;
-        let tips = 0;
-        total += this.total;
-        tips += this.tips;
-        i = total*tips*12*12;
-        return i;
-    }
-    totalMonth() {
-        let total = 0;
-        let i = 0;
-        let tips = 0;
-        total += this.total;
-        tips += this.tips;
-        i = total*tips+total;
-        return i;
-    }
-}
-
-const d4 = new Manager('Mike', 'Vazovski', 20000, 0.1);
+let text = 'Chuck Norris once ate at Taco Bell and didn’t get diarrhea.Chuck Norris can play the violin with a piano. Chuck Norris used to beat the shit out of his shadow because it was following to close. It now stands a safe 30 feet behind him.When Chuck Norris writes, he makes paper bleed.Chuck Norris once won an underwater breathing contest. With a fish.Chuck Norris can dribble a bowling ball.What’s the strongest part of Chuck Norris? His opinion.Chuck Norris tells Simon what to do.Chuck Norris threw a grenade and killed 50 people. Then it exploded.';
+//kluska
+// console.log(text.search('Chuck'));
+// console.log(text.search('Norris'));
+// console.log(text.slice(6, 999));
+console.log(Array.from(text.matchAll("Chuck")));
+console.log(text.re("Chuck"));
