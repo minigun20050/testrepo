@@ -1,19 +1,45 @@
-@keyframes donut-spin {
-    0% {
-      transform: rotate(0deg);
+@keyframes slide {
+    from {
+        scale: 120%;
     }
-    100% {
-      transform: rotate(360deg);
+    to {
+        scale: 120%;
     }
-  }
-  
-  .donut {
-    display: inline-block;
-    border: 4px solid rgba(0, 0, 0, 0.1);
-    border-left-color: #7983ff;
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
-    animation: donut-spin 1.2s linear infinite;
-  }
-  
+}
+* {
+    padding: 20px;
+    margin: 2px;
+    box-sizing:border-box;
+}
+
+.slide :hover{
+    animation-name: slide;
+    animation-duration: 100000s;
+}
+
+.img__description {
+    position:absolute;
+    
+    top: 0;
+    bottom: -33vh;
+    left: 0;
+    right: -1vw;
+    background: rgba(118, 50, 158, 0.308);
+    color: #91ff00;
+    visibility: hidden;
+    opacity: 0;
+    text-align: center;
+    padding: 160pt;
+}
+ 
+.img__wrap {
+    width: 500pt;
+    height: 200pt;
+    position: relative;
+}
+
+.img__wrap:hover .img__description {
+    visibility: visible;
+    opacity: 1;
+    font-size: 25pt;
+}
