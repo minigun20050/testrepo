@@ -2,14 +2,29 @@
     font-family: 'Times New Roman';
 }
 
-nav, header {
+/* nav {
     background-color: #afafaf;
     text-decoration: solid;
-}
+} */
 
 table {
     width: 90%;
-    border-color: black;
-    border-width: 1px;
 }
 
+tbody > tr > td{
+    background-color: #e4f0f5;
+}
+  
+tbody > tr > td:last-of-type {
+    text-align: center;
+}
+  
+thead {
+    border-bottom: 1px solid black;
+    background-color: #afafaf;
+}
+
+input {
+    width: 15%;
+    margin-left: 42%;
+}
