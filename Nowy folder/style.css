@@ -1,0 +1,15 @@
+* {
+    font-family: 'Times New Roman';
+}
+
+nav, header {
+    background-color: #afafaf;
+    text-decoration: solid;
+}
+
+table {
+    width: 90%;
+    border-color: black;
+    border-width: 1px;
+}
+
