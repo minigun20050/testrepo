@@ -1,0 +1,48 @@
+@keyframes animacja {
+    0% {
+        color: black;
+    }
+    25% {
+        color: red;
+    }
+    50% {
+        color: yellow;
+    }
+    75% {
+        color: green;
+    }
+    100% {
+        color: black;
+    }
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+p.animacja {
+    animation-name: animacja;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+nav {
+    line-height: 25px;
+}
+
+nav > ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+nav > ul > li {
+    width: 100%;
+}
+nav a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+}
