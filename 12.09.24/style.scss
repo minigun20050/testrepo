@@ -1,0 +1,87 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    > header{
+        height: 20vh;
+        line-height: 20vh;
+        text-align: center;
+        background-color: #ccf;
+        font-family: Arial;
+        &:hover {
+            color: aqua;
+        }
+    }
+    > nav {
+        min-height: 10vh;
+        line-height: 10vh;
+        border-top: black 1px solid;
+        border-bottom: grey 1px solid;
+        > ul {
+            display: flex;
+            list-style-type: none;
+            > li{
+                width: 20vw;
+                background-color: lightblue;
+                text-align: center;
+                &:hover{
+                    background-color: lightgray;
+                }
+                > a {
+                    display: block;
+                    text-decoration: none;
+                    color: black;
+                }
+            }
+        }
+    }
+    main {
+        width: 80vw;
+        > article {
+            margin-left: 10px;
+            margin-right: 10px;
+            text-align: justify;
+            > header {
+                text-align: center;
+                padding-top: 5px;
+                padding-bottom: 5px;
+            }
+            p {
+                text-indent: 10px;
+                font-family: Calibri;
+            }
+        }
+    }
+    > div {
+        display: flex;
+        > aside {
+            width: 20vw;
+            background-color: lightgreen;
+            > ul {
+                display: flex;
+                flex-direction: column;
+                list-style-type: none;
+                > li {
+                    height: 5vh;
+                    line-height: 5vh;
+                }
+                > a {
+                    display: block;
+                    text-decoration: none;
+                    text-align: center;
+                    color: black;
+                    &:hover {
+                        cursor: default;
+                    }
+                }
+            }
+        }
+    }
+    > footer {
+        min-height: 10vh;
+        background-color: #ccf;    
+    }
+
+}
