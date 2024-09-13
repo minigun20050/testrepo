@@ -1,0 +1,126 @@
+$headerHeight: 15vh;
+$headerBgColor: #ccf;
+$headerHoverColor: aqua;
+$navHeight: 10vh;
+$navBorderTop: black 1px solid;
+$navBorderBottom: grey 1px solid;
+$liWidth: 20vw;
+$liHeight: 5vh;
+$liBgColor: lightblue;
+$liHoverBgColor: lightgrey;
+$navLiAColor: black;
+$mainWidth: 80vw;
+$articleMargin: 10px;
+$paddingHeader: 5px;
+$paraTextIndent: 10px;
+$footerHeight: 10vh;
+$footerBgColor: #ccf;
+$asideBgColor: lightgreen;
+$asideAColor: black;
+$mainArticleHeaderPFontFamily: Calibri;
+$asideWidth: calc(100vw - $mainWidth);
+
+@mixin phoneOnly {
+    @media only screen and (min-width: 599px) { @content; } 
+}
+@mixin tabletPortrait {
+    @media only screen and (min-width: 600px) { @content; } 
+}
+@mixin tabletLandscape {
+    @media only screen and (min-width: 900px) { @content; } 
+}
+@mixin desktop {
+    @media only screen and (min-width: 1200px) { @content; } 
+}
+@mixin bigDesktop {
+    @media only screen and (min-width: 1800px) { @content; } 
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    > header{
+        height: $headerHeight;
+        line-height: $headerHeight;
+        text-align: center;
+        background-color: $headerBgColor;
+        font-family: Arial;
+        &:hover {
+            color: $headerHoverColor;
+        }
+    }
+    > nav {
+        min-height: $navHeight;
+        line-height: $navHeight;
+        border-top: $navBorderTop;
+        border-bottom: $navBorderBottom;
+        > ul {
+            display: flex;
+            list-style-type: none;
+            > li{
+                width: $liWidth;
+                background-color: $liBgColor;
+                text-align: center;
+                &:hover{
+                    background-color: $liHoverBgColor;
+                }
+                > a {
+                    display: block;
+                    text-decoration: none;
+                    color: $navLiAColor;
+                }
+            }
+        }
+    }
+    main {
+        width: $mainWidth;
+        > article {
+            margin-left: $articleMargin;
+            margin-right: $articleMargin;
+            text-align: justify;
+            > header {
+                text-align: center;
+                padding-top: $paddingHeader;
+                padding-bottom: $paddingHeader;
+            }
+            p {
+                text-indent: $paraTextIndent;
+                font-family: $mainArticleHeaderPFontFamily;
+            }
+        }
+    }
+    > div {
+        display: flex;
+        > aside {
+            width: $asideWidth;
+            background-color: $asideBgColor;
+            > ul {
+                display: flex;
+                flex-direction: column;
+                list-style-type: none;
+                > li {
+                    height: $liHeight;
+                    line-height: $liHeight;
+                }
+                > a {
+                    display: block;
+                    text-decoration: none;
+                    text-align: center;
+                    color: $asideAColor;
+                    &:hover {
+                        cursor: default;
+                    }
+                }
+            }
+        }
+    }
+    > footer {
+        min-height: $footerHeight;
+        background-color: $footerBgColor;    
+    }
+
+}

@@ -1,0 +1,85 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body > header {
+  height: 15vh;
+  line-height: 15vh;
+  text-align: center;
+  background-color: #ccf;
+  font-family: Arial;
+}
+body > header:hover {
+  color: aqua;
+}
+body > nav {
+  min-height: 10vh;
+  line-height: 10vh;
+  border-top: black 1px solid;
+  border-bottom: grey 1px solid;
+}
+body > nav > ul {
+  display: flex;
+  list-style-type: none;
+}
+body > nav > ul > li {
+  width: 20vw;
+  background-color: lightblue;
+  text-align: center;
+}
+body > nav > ul > li:hover {
+  background-color: lightgrey;
+}
+body > nav > ul > li > a {
+  display: block;
+  text-decoration: none;
+  color: black;
+}
+body main {
+  width: 80vw;
+}
+body main > article {
+  margin-left: 10px;
+  margin-right: 10px;
+  text-align: justify;
+}
+body main > article > header {
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+body main > article p {
+  text-indent: 10px;
+  font-family: Calibri;
+}
+body > div {
+  display: flex;
+}
+body > div > aside {
+  width: 20vw;
+  background-color: lightgreen;
+}
+body > div > aside > ul {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+}
+body > div > aside > ul > li {
+  height: 5vh;
+  line-height: 5vh;
+}
+body > div > aside > ul > a {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  color: black;
+}
+body > div > aside > ul > a:hover {
+  cursor: default;
+}
+body > footer {
+  min-height: 10vh;
+  background-color: #ccf;
+}/*# sourceMappingURL=style.css.map */
