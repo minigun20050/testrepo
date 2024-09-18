@@ -1,0 +1,200 @@
+$headerHeight: 15vh;
+$headerBgColor: #ccf;
+$headerHColor: aqua;
+$navMinHeight: 10vh;
+$navBorderTop: black 1px solid; 
+$navBorderBottom: grey 1px solid;
+$navLiWidth: 20vw;
+$navLiBGColor: lightblue;
+$navLiBGColorHover: lightgrey;
+$navLiAColor: black;
+$mainWidth: 75vw;
+$mainArticlePaddingLeft: 10px;
+$mainArtcilePaddingRight: 10px;
+$mainArticleHeaderPaddingTop: 5px;
+$mainArticleHeaderPaddingBottom: 5px;
+$mainArticleHeaderPTextIndent: 10px;
+$mainArticleHeaderPFontFamily: Calibri;
+$asideWidth: calc(100vw - $mainWidth);
+
+@mixin phoneOnly {
+    @media (max-width: 599px) { @content; }
+}
+@mixin tabletPortrait {
+    @media (min-width: 600px) { @content; }
+}
+@mixin tabletLandscape {
+    @media (min-width: 900px) { @content; }
+}
+@mixin desktop {
+    @media (min-width: 1200px) { @content; }
+}
+@mixin bigDesktop {
+    @media (min-width: 1800px) { @content; }
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    > header {
+        height: $headerHeight;
+        line-height: $headerHeight;
+        text-align: center;
+        background-color: $headerBgColor;
+        font-family: Arial;
+        &:hover {
+            color: $headerHColor;
+        }
+    }
+    > nav {
+        // min-height: $navMinHeight;
+        // line-height: $navMinHeight;
+        border-top: $navBorderTop;
+        border-bottom: $navBorderBottom;
+        > ul {
+            display: flex;
+            list-style-type: none;
+            > li{
+                width: $navLiWidth;
+                background-color: $navLiBGColor;
+                text-align: center;
+                &:hover{
+                    background-color: $navLiBGColorHover;
+                }
+                > a {
+                    display: block;
+                    text-decoration: none;
+                    color: black;
+                }
+            }
+        }
+    }
+    main {
+        // width: $mainWidth;
+        > article {
+            padding-left: $mainArticlePaddingLeft;
+            padding-right: $mainArtcilePaddingRight;
+            text-align: justify;
+            header {
+                text-align: center;
+                padding-top: $mainArticleHeaderPaddingTop;
+                padding-bottom: $mainArticleHeaderPaddingBottom;
+            }
+            p  {
+                text-indent: 10px;
+                font-family: Calibri;
+            }
+        }
+    }
+    > div {
+        display: flex;
+        > aside {
+            width: $asideWidth;
+            background-color: lightgreen;
+            > ul {
+                // display: flex;
+                flex-direction: column;
+                list-style-type: none;
+                > li {
+                    height: 5vh;
+                    line-height: 5vh;
+                    > a {
+                        display: block;
+                        text-decoration: none;
+                        text-align: center;
+                        color: black;
+                        &:hover {
+                            cursor: default;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    > footer {
+        min-height: 10vh;
+        background-color: #ccf;
+    }
+    @include phoneOnly() {
+        > nav {
+            > #openMenu {
+                margin: 1vh;
+                padding: 1vh;
+                &:focus + ul {
+                    position: absolute;
+                    display: flex;
+                    width: 100vw;
+                }
+            }
+            > ul {
+                display: none;
+                flex-direction: column;
+                > li {
+                    width: 100vw;
+                }
+            }
+        }
+        aside {
+            display: none;
+        }
+        main {
+            width: 100vw;
+        }
+    }
+    @include tabletPortrait() {
+        > nav {
+            min-height: 5vh;
+            line-height: 5vh;
+            > #openMenu {
+                display: none;
+            }
+        }
+        aside {
+            display: none;
+        }
+        main {
+            width: 100vw;
+        }
+    }
+    @include tabletLandscape() {
+        aside {
+            display: block;
+        }
+        main {
+            width: $mainWidth;
+        }
+    }
+    @include desktop() {
+        > nav {
+            min-height: $navMinHeight;
+            line-height: $navMinHeight;
+            > ul {
+                display: flex;
+                > li{
+                    width: $navLiWidth;
+                }
+            }
+        }
+        main {
+            width: $mainWidth;
+        }
+        > div {
+            > aside {
+                width: $asideWidth;
+                > ul {
+                    display: flex;
+                    > li {
+                        height: 5vh;
+                        line-height: 5vh;
+                        
+                    }
+                    
+                }
+            }
+        }
+    }
+}
