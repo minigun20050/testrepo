@@ -1,0 +1,92 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* index.html */
+main > .displayLink {
+    display: block;
+    padding: 25px;
+    margin: 25px;
+    text-align: center;
+    font-size: 10rem;
+    text-decoration: none;
+    color: #000;
+}
+
+/* grid.html */ 
+#grid {
+    display: grid;
+    grid-template-areas: "header header header header header" "aside nav nav nav nav" "aside article article article article" "footer footer footer footer footer";
+}
+#grid > header {
+    grid-area: header;
+    height: 10vh;
+    background-color: #ccc;
+}
+#grid > nav {
+    grid-area: nav;
+    min-height: 5vh;
+    line-height: 5vh;
+}
+#grid > nav > ul {
+    display: flex;
+    list-style-type: none;
+}
+#grid > nav > ul > li {
+    width: 20%;
+}
+#grid > nav > ul > li > a {
+    display: block;
+    text-align: center;
+    color: #000;
+    text-decoration: none;
+}
+#grid > aside {
+    grid-area: aside;
+}
+#grid > article {
+    grid-area: article;
+}
+#grid > footer {
+    grid-area: footer;
+}
+
+/* float.html */
+#float > header {
+    height: 10vh;
+    background-color: #ccc;
+}
+#float > nav {
+    min-height: 5vh;
+    line-height: 5vh;
+}
+#float > nav > ul {
+    display: flex;
+    list-style-type: none;
+}
+#float > nav > ul > li {
+    width: 20%;
+}
+#float > nav > ul > li > a {
+    display: block;
+    text-align: center;
+    color: #000;
+    text-decoration: none;
+}
+#float #container > aside {
+    float: left;
+    width: 20vw;
+}
+#float #container > main {
+    float: right;
+    width: 80vw;
+}
+#float #container > main > article > section {
+    float: left;
+    width: 50%;
+}
+#float > footer {
+    clear: both;
+}
