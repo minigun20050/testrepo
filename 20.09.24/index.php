@@ -1,6 +1,6 @@
 <?php
 $fib = [0, 1];
-$i = 2;
+// $i = 2;
 
 // for($i = 2; $i < 10; $i++) {
 //     $val = $fib[count($fib) - 2] + $fib[count($fib) - 1];
