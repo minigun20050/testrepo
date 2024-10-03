@@ -1,0 +1,38 @@
+:root {
+   --body-color: #ccc;
+   --container-width: 85vw;
+   --header-color: #cde;
+   --header-height: 7vh;
+   --article-color: #dec;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--body-color);
+}
+body #container {
+  width: var(--container-width);
+  margin: auto;
+}
+body #container > header {
+  background-color: var(--header-color);
+  height: var(--header-height);
+}
+
+main {
+  --header-height: 3vh;
+}
+main > section > article header {
+  height: var(--header-height);
+}
+
+@media screen and {
+  :root {
+    --body-color: #aaa;
+  }
+}

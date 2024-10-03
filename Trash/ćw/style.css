@@ -1,0 +1,188 @@
+/* @keyframes slide {
+    from {
+        transform: scale(100%);
+    }
+    to {
+        
+    }
+} */
+@keyframes colorChange {
+    0% {
+        background: red;
+        background-image: url(./pngwing.com.png);    
+    }
+    5% {
+        background: blue;
+        background-image: url(./pngwing.com.png);    
+    }
+    10% {
+        background: green;
+        background-image: url(./pngwing.com.png);    
+    }
+    15% {
+        background: orange;
+        background-image: url(./pngwing.com.png);    
+    }
+    20% {
+        background: purple;
+        background-image: url(./pngwing.com.png);    
+    }
+    25% {
+        background: red;
+        background-image: url(./pngwing.com.png);    
+    }
+    30% {
+        background: blue;
+        background-image: url(./pngwing.com.png);    
+    }
+    35% {
+        background: green;
+        background-image: url(./pngwing.com.png);    
+    }
+    40% {
+        background: orange;
+        background-image: url(./pngwing.com.png);    
+    }
+    45% {
+        background: purple;
+        background-image: url(./pngwing.com.png);    
+    }
+    50% {
+        background: red;
+        background-image: url(./pngwing.com.png);
+    }
+    55% {
+        background: red;
+        background-image: url(./pngwing.com.png);    
+    }
+    60% {
+        background: blue;
+        background-image: url(./pngwing.com.png);    
+    }
+    65% {
+        background: green;
+        background-image: url(./pngwing.com.png);    
+    }
+    70% {
+        background: orange;
+        background-image: url(./pngwing.com.png);    
+    }
+    75% {
+        background: purple;
+        background-image: url(./pngwing.com.png);    
+    }
+    80% {
+        background: red;
+        background-image: url(./pngwing.com.png);    
+    }
+    85% {
+        background: blue;
+        background-image: url(./pngwing.com.png);    
+    }
+    90% {
+        background: green;
+        background-image: url(./pngwing.com.png);    
+    }
+    95% {
+        background: orange;
+        background-image: url(./pngwing.com.png);    
+    }
+    100% {
+        background: purple;
+        background-image: url(./pngwing.com.png);    
+    }
+}
+
+
+* {
+    padding: 10px;
+    margin: 2px;
+    animation-name: colorChange;
+    animation-duration: 0.7s;
+    animation-iteration-count: infinite;
+}
+
+/* button {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+    text-align: center;
+    margin: -18pt;
+    display: block;
+}
+
+button :active {
+    display:none;
+    z-index: 2;
+    text-align: center;
+} */
+
+header {
+    text-align: center;
+}
+
+#art {
+    background-color: antiquewhite;
+    width: 150pt;
+    height: 210pt;
+}
+
+article {
+    background-color:sandybrown;
+    width: auto;
+    height: auto;
+    text-align: center;
+    margin-top: 6pt;
+}
+
+#art :hover {
+    width: 1000pt;
+    background-color:lightcoral;
+    border-radius: 5px;
+    transition: border-radius 0.5s ,background-color 0.5s , width 10s;
+    transition-timing-function: linear;
+}
+
+img {
+    width: 18%;
+    height: 35%;
+    margin: auto;
+    position: relative;
+}
+
+footer {
+    text-align: center;
+}
+
+/* .slide :hover{
+    animation-name: slide;
+    animation-duration: 100000s;
+}
+
+.img__description {
+    position:absolute;
+    
+    top: 0;
+    bottom: -33vh;
+    left: 0;
+    right: -1vw;
+    background: rgba(118, 50, 158, 0.308);
+    color: #91ff00;
+    visibility: hidden;
+    opacity: 0;
+    text-align: center;
+    padding: 160pt;
+}
+ 
+.img__wrap {
+    width: 500pt;
+    height: 200pt;
+    position: relative;
+}
+
+.img__wrap:hover .img__description {
+    visibility: visible;
+    opacity: 1;
+    font-size: 25pt;
+} */

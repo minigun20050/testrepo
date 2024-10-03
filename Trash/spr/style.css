@@ -1,0 +1,22 @@
+header {
+    height: 10vh;
+    line-height: 10vh;
+    text-align: center;
+    background-color: rgb(204, 221, 255);
+}
+nav {
+    height: 5vh;
+    background-color: rgb(189, 212, 255);
+}
+body {
+    margin-inline: 10px;
+}
+body > article {
+    background-color: rgb(204, 221, 255);
+}
+footer {
+    background-color: rgb(189, 212, 255);
+    height: 5vh;
+    line-height: 5vh;
+    text-align: center;
+}

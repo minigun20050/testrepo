@@ -1,0 +1,29 @@
+function kwadratup(a) {
+    for(let i = 4; i < a; i++) {
+        for(let j = 0; j < a; j++) {
+            document.write("* ")
+        }
+        document.write("<br>")
+    }
+}
+kwadratup(5);
+
+function kwadratsides(a) {
+    for(let i = 0; i < a; i++) {
+        for(let j = 4; j < a; j++) {
+            document.write("*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*")
+        }
+        document.write("<br>")
+    }
+}
+kwadratsides(5);
+
+function kwadratdown(a) {
+    for(let i = 4; i < a; i++) {
+        for(let j = 0; j < a; j++) {
+            document.write("* ")
+        }
+        document.write("<br>")
+    }
+}
+kwadratdown(5);

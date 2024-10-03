@@ -1,0 +1,45 @@
+@keyframes slide {
+    from {
+        scale: 120%;
+    }
+    to {
+        scale: 120%;
+    }
+}
+* {
+    padding: 20px;
+    margin: 2px;
+    box-sizing:border-box;
+}
+
+.slide :hover{
+    animation-name: slide;
+    animation-duration: 100000s;
+}
+
+.img__description {
+    position:absolute;
+    
+    top: 0;
+    bottom: -33vh;
+    left: 0;
+    right: -1vw;
+    background: rgba(118, 50, 158, 0.308);
+    color: #91ff00;
+    visibility: hidden;
+    opacity: 0;
+    text-align: center;
+    padding: 160pt;
+}
+ 
+.img__wrap {
+    width: 500pt;
+    height: 200pt;
+    position: relative;
+}
+
+.img__wrap:hover .img__description {
+    visibility: visible;
+    opacity: 1;
+    font-size: 25pt;
+}
