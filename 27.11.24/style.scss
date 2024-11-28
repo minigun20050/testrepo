@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+}
+html, body, header, h1, nav {
+    padding: 0;
+    margin: 0;
+}
+body {
+    > nav {
+        min-height: 5vh;
+        background-color: #0b9c7a;
+        > ul {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: row;
+            gap: 5px;
+            list-style-type: none;
+            justify-content: space-evenly;
+            > li {
+                margin: 0;
+                padding: 0;
+                width: 10vw;
+                a {
+                    display: block;
+                    line-height: 5vh;
+                    text-decoration: none;
+                    text-align: center;
+                    color: #bcecff;
+                    &:hover {
+                        color: #354449;
+                        background-color: #0db68e;
+                    }
+                }
+            }
+        }
+    }
+}
