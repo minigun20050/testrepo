@@ -34,11 +34,18 @@ var_dump(function4(1345, 1, 15, 555));
 
 <?php
 function function5(...$txt) {
-    array_reverse($txt);
-    return $txt;
+    return (array_reverse($txt));
 }
 echo("<br>" . "5) ");
 var_dump(function5("yy", "yep", "tttx", "text?"));
+?>
+
+<?php
+// function function6($liczba) {
+
+// }
+// echo("<br>" . "6) ");
+// var_dump(function6());
 ?>
 
 <?php
@@ -56,22 +63,11 @@ var_dump(function7(192));
 ?>
 
 <?php
-// function function8(...$liczby) {
-//     switch ($liczby) {
-//         case '1, 2, 3, 4, 5, 6, 7, 8, 9, 10':
-//             return "None";
-//             break;
-//         case '2, 3, 4, 5, 6, 7, 8, 9, 10':
-//             return "1";
-//             break;
-//         case '1, 3, 4, 5, 6, 7, 8, 9, 10':
-//             return "2";
-//             break;
-//         case '1, 2, 4, 5, 6, 7, 8, 9, 10':
-//             return "3";
-//             break;
-//     }
-// }
-// echo("<br>" . "8) ");
-// var_dump(function8(1, 3, 4, 5, 6, 7, 8, 9, 10));
+function function8(...$array1) {
+    $arr2 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+    $intersect = array_intersect($array1, $arr2);
+    return array_merge(array_diff($array1, $intersect), array_diff($arr2, $intersect));
+}
+echo("<br>" . "8) ");
+var_dump(function8(1, 2, 3, 4, 6, 7, 8, 9, 10)); //Спасибо документации и форумам...
 ?>
