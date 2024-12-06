@@ -15,17 +15,17 @@ var_dump(function2(1345, 1, 15, 555));
 ?>
 
 <?php
-function function3($liczba, $d) {
-    $arr = [];
-    for ($i=1; $i < $d; $i++) { 
-        if ($liczba % $i == 0) {
-            array_push($arr, $i);
-        }
-    }
-    return $arr;
-}
-echo("<br>" . "3) ");
-var_dump(function3(20, 5));
+// function function3($liczba, $d) {
+//     $arr = [];
+//     for ($i=1; $i < $d; $i++) { 
+//         if ($liczba % $i == 0) {
+//             array_push($arr, $i);
+//         }
+//     }
+//     return $arr;
+// }
+// echo("<br>" . "3) ");
+// var_dump(function3(20, 5));
 ?>
 
 <?php
