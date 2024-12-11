@@ -46,15 +46,19 @@ print(function3("12 / 0"));
 ?>
 
 <?php
-function function5(...$liczby, $metoda) {
-    if ($metoda = "asc") {
-        return sort($liczby);
-    } elseif ($metoda = "desc") {
-        return rsort($liczby);
-    } else {
-        # code...
-    }
+function function5($metoda, $liczby) {
+    $arr = [];
+    $arr = str_split($liczby);
+	if ($metoda == "asc") {
+		sort($arr);
+        return $arr;
+	} if ($metoda == "desc") {
+        rsort($arr);
+        return $arr;
+	} else {
+		print "asc or desc";
+	}
 }
 echo("<br>" . "5) ");
-print(function5(5));
+var_dump(function5("desc", 14297));
 ?>
