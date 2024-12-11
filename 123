@@ -1,0 +1,14 @@
+<?php
+function function5($metoda, ...$liczby) {
+	if ($metoda = "asc") {
+		sort($liczby);
+		return $liczby;
+	} elseif ($metoda = "desc") {
+		return rsort($liczby);
+	} else {
+		print "asc or desc";
+	}
+}
+echo("<br>" . "5) ");
+var_dump(function5("asc", 14297));
+?>
