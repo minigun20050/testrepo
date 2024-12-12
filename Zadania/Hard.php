@@ -134,11 +134,15 @@ print(function7("ziemia"));
 // S = (v^2 / g) * sin*2 a
 //v - скорость в м/с  ||  a - угол броска в градусах  ||  g = 9.81
 function function8($pocz, $kat) {
-    $da = $kat * 2;
     $g = 9.81;
-    $h = pow($pocz, 2) / ($g * 2) * pow((sin(deg2rad($kat))), 2);
-    $s = (pow($pocz, 2) / $g) * (sin(deg2rad($da)));
-    return "H = " . round($h, 2) . "m " . "S = " . round($s, 2) . "m";
+    if ($pocz < 0 || $kat < 0) {
+        print "Error";
+    } else {
+        $da = $kat * 2;
+        $h = pow($pocz, 2) / ($g * 2) * pow((sin(deg2rad($kat))), 2);
+        $s = (pow($pocz, 2) / $g) * (sin(deg2rad($da)));
+        return "H = " . round($h, 2) . "m " . "S = " . round($s, 2) . "m";
+    }
 }
 echo("<br>" . "8) ");
 print(function8(10, 5));
