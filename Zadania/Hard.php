@@ -46,6 +46,64 @@ print(function3("12 / 0"));
 ?>
 
 <?php
+function function4(...$wybor) {
+    $players = ["Tom", "Alex"];
+    $winner1 = [];
+    $winner2 = [];
+    print "wybor: ";
+    print $wybor[0] . " | " . $wybor[1];
+    echo "<br>";
+    if (count($wybor) == count($players)) {
+        switch ($wybor) {
+            case $wybor[0] == 'n' && $wybor[1] == 'p':
+                array_push($winner1, 1); // ножницы и бумага
+                break;
+            case $wybor[0] == 'n' && $wybor[1] == 'k':
+                array_push($winner2, 1); // ножницы и камень
+                break;
+            case $wybor[0] == 'n' && $wybor[1] == 'n':
+                // ножницы и ножницы
+                break;
+            case $wybor[0] == 'k' && $wybor[1] == 'n':
+                array_push($winner1, 1); // камень и ножницы
+                break;
+            case $wybor[0] == 'k' && $wybor[1] == 'p':
+                array_push($winner1, 1); // камень и бумага
+                break;
+            case $wybor[0] == 'k' && $wybor[1] == 'k':
+                // камень и камень
+                break;
+            case $wybor[0] == 'p' && $wybor[1] == 'k':
+                array_push($winner2, 1); // бумага и камень
+                break;
+            case $wybor[0] == 'p' && $wybor[1] == 'n':
+                array_push($winner2, 1); // бумага и ножницы
+                break;
+            case $wybor[0] == 'p' && $wybor[1] == 'p':
+                // бумага и бумага
+                break;
+            default:
+                print "Error";
+                break;
+        }
+    } else {
+        return "Error";
+    }
+    if (count($winner1) > count($winner2)) {
+        print "Winner is " . $players[0] . "!";
+    }
+    if (count($winner1) < count($winner2)) {
+        print "Winner is " . $players[1] . "!";
+    }
+    if (count($winner1) == count($winner2)) {
+        print "Tie!";
+    }
+}
+echo("<br>" . "4) ");
+var_dump(function4("k", "n"));
+?>
+
+<?php
 function function5($metoda, $liczby) {
     $arr = [];
     $arr = str_split($liczby);
