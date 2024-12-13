@@ -49,86 +49,86 @@ function function6($text) {
     if (substr_count($text, "a") > 1) {
         return false;
     }
-    elseif (substr_count($text, "b") > 1) {
+    if (substr_count($text, "b") > 1) {
         return false;
     }
-    elseif (substr_count($text, "c") > 1) {
+    if (substr_count($text, "c") > 1) {
         return false;
     }
-    elseif (substr_count($text, "d") > 1) {
+    if (substr_count($text, "d") > 1) {
         return false;
     }
-    elseif (substr_count($text, "e") > 1) {
+    if (substr_count($text, "e") > 1) {
         return false;
     }
-    elseif (substr_count($text, "f") > 1) {
+    if (substr_count($text, "f") > 1) {
         return false;
     }
-    elseif (substr_count($text, "g") > 1) {
+    if (substr_count($text, "g") > 1) {
         return false;
     }
-    elseif (substr_count($text, "h") > 1) {
+    if (substr_count($text, "h") > 1) {
         return false;
     }
-    elseif (substr_count($text, "i") > 1) {
+    if (substr_count($text, "i") > 1) {
         return false;
     }
-    elseif (substr_count($text, "j") > 1) {
+    if (substr_count($text, "j") > 1) {
         return false;
     }
-    elseif (substr_count($text, "k") > 1) {
+    if (substr_count($text, "k") > 1) {
         return false;
     }
-    elseif (substr_count($text, "l") > 1) {
+    if (substr_count($text, "l") > 1) {
         return false;
     }
-    elseif (substr_count($text, "m") > 1) {
+    if (substr_count($text, "m") > 1) {
         return false;
     }
-    elseif (substr_count($text, "n") > 1) {
+    if (substr_count($text, "n") > 1) {
         return false;
     }
-    elseif (substr_count($text, "o") > 1) {
+    if (substr_count($text, "o") > 1) {
         return false;
     }
-    elseif (substr_count($text, "p") > 1) {
+    if (substr_count($text, "p") > 1) {
         return false;
     }
-    elseif (substr_count($text, "q") > 1) {
+    if (substr_count($text, "q") > 1) {
         return false;
     }
-    elseif (substr_count($text, "r") > 1) {
+    if (substr_count($text, "r") > 1) {
         return false;
     }
-    elseif (substr_count($text, "s") > 1) {
+    if (substr_count($text, "s") > 1) {
         return false;
     }
-    elseif (substr_count($text, "t") > 1) {
+    if (substr_count($text, "t") > 1) {
         return false;
     }
-    elseif (substr_count($text, "u") > 1) {
+    if (substr_count($text, "u") > 1) {
         return false;
     }
-    elseif (substr_count($text, "v") > 1) {
+    if (substr_count($text, "v") > 1) {
         return false;
     }
-    elseif (substr_count($text, "w") > 1) {
+    if (substr_count($text, "w") > 1) {
         return false;
     }
-    elseif (substr_count($text, "x") > 1) {
+    if (substr_count($text, "x") > 1) {
         return false;
     }
-    elseif (substr_count($text, "y") > 1) {
+    if (substr_count($text, "y") > 1) {
         return false;
     }
-    elseif (substr_count($text, "z") > 1) {
+    if (substr_count($text, "z") > 1) {
         return false;
     } else {
         return true;
     }
 }
 echo("<br>" . "6) ");
-var_dump(function6("tex"));
+var_dump(function6("abcgd"));
 ?>
 
 <?php
