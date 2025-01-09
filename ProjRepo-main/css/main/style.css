@@ -8,56 +8,73 @@ body {
   background-color: rgb(31, 31, 31);
 }
 body > header {
-  display: flex;
   flex-direction: row;
   row-gap: 40vw;
   height: 15vh;
   line-height: 14vh;
-  background-image: rgb(31, 31, 31);
+  background-color: rgb(31, 31, 31);
 }
 body > header > h1 {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  width: auto;
   font-size: xxx-large;
   text-align: center;
   font-family: "Courier New", Courier, monospace;
-  position: absolute;
-  margin-left: 860px;
   color:rgb(231, 231, 231) ;
 }
-body > header #settings {
+body > header > div {
+  /* margin-top: auto;
+  margin-bottom: auto; */
   position: absolute;
-  margin-top: 4vh;
-  margin-bottom: 4vh;
+  height: 80px;
+  width: 100%;
+  top: 0;
+  text-align: right;
+}
+body > header > div #settings {
+  /* margin-top: 4vh; */
+  /* margin-bottom: 4vh; */
+  /* margin-right: 20px;
+  margin-left: -130px;
+  margin-top: 20px;
+  margin-bottom: 120px; */
+  display: table-cell;
+  vertical-align: middle;
   height: 65px;
-  margin-right: 20px;
   width: 120px;
-  margin-left: 1710px;
   background: url("./png/to.png") center no-repeat;
   background-size: 50px 50px;
   border: none;
 }
-body > header #settings:hover {
+body > header > div #settings:hover {
   cursor:pointer;
   background-color: rgb(43, 43, 43);
 }
 body > header .set {
   display: none;
 }
-body > header #login {
-  position: absolute;
-  margin-left: 1570px;
-  margin-top: 4vh;
-  margin-bottom: 4vh;
-  height: 65px;
-  margin-right: 20px;
-  width: 120px;
-  font-size:x-large;
+body > header > div #login {
+  /* margin-top: 4vh; */
+  /* margin-bottom: 4vh; */
+  /* margin-right: 20px;
+  margin-bottom: 120px;
+  margin-top: 20px; */
+  position: relative;
+  display: table-cell;
+  vertical-align: middle;
+  height: 10vh;
+  width: 12vw;
+  font-size:4vh;
+  margin-right: 1vw;
   border: none;
   background: none;
   text-align: center;
   text-decoration: none;
   color: rgb(204, 204, 204);
 }
-body > header #login:hover {
+body > header > div #login:hover {
   cursor:pointer;
   background-color: rgb(43, 43, 43);
 }
@@ -125,23 +142,35 @@ body main .art > article > header > h3 {
 body main .art > article > section {
   padding: 5px;
 }
+body > main > header {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  width: auto;
+  text-align: center;
+  color:lightblue;
+  margin-bottom: 40px;
+  margin-top: -30px;
+}
 body main .art-head {
   background-color: rgb(43, 43, 43);
   display: block;
-  height: 215px;
+  height: auto;
   padding-left: 8vw;
   padding-right: 8vw;
   width: 900px;
-  margin-left: 300px;
-  margin-bottom: 50px;
-  margin-top: -40px;
+  /* margin-left: 300px; */
+  /* margin-bottom: 50px; */
+  /* margin-top: -40px; */
   border-radius: 10px;
 }
 body main .art-head p {
   font-size: large;
+  padding-top: 15px;
+  padding-bottom: 25px;
 }
 body main .art-head h3 {
-  margin-top: 5px;
+  padding-top: 10px;
   font-size: 35px;
 }
 body main .art-head > header {
@@ -152,3 +181,6 @@ body main .art-head > header {
 body main .art-head > header > h3 {
   text-align: center;
 }/*# sourceMappingURL=style.css.map */
+#tu {
+  width: 30%;
+}
