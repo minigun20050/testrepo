@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    height: 10vh;
+    background-color: coral;
+}
+/* nav {
+
+} */
+nav > ul {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    list-style-type: none;
+    width: 100%;
+    justify-content: center;
+}
+nav > ul > li {
+    padding: 8px;
+    border: 1px solid black;
+}
+
+main {
+    background-color: khaki;
+
+}
+main > form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+main > form > * {
+    flex: 0;
+    align-self: center;
+    width: 300px;
+}
+main > h1 {
+    text-align: center;
+}
+table {
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+td,
+th {
+    width: 100px;
+    height: 50px;
+    border: 1px solid black;
+    text-align: center;
+}

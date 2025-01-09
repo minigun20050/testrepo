@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: rgb(0, 0, 195);
+    >header {
+        display: flex;
+        flex-direction: row;
+        row-gap: 40vw;
+        height: 15vh;
+        line-height: 14vh;
+        background-image: radial-gradient(lightblue, blue , darkblue );
+        >h1 {
+            text-align: center;
+            font-family:'Courier New', Courier, monospace;
+            width: 100vw;
+            margin-left:13vh;
+        }
+        #settings {
+            margin-top: 4vh;
+            margin-bottom: 4vh;
+            height: 50px;
+            margin-right: 20px;
+            width: 50px;
+            background: url('./png/to.png') left no-repeat;
+            background-size: 30px 30px;
+            border:none;
+        }
+        .set {
+            display: none;
+        }
+        #login {
+            width: 50px;
+            margin-right: 20px;
+            border:none;
+            background:none;
+            text-align: center;
+            text-decoration:underline;
+            color: rgb(10, 10, 54);
+        }
+    }
+    >nav {
+        height: 8vh;
+        line-height: 8vh;
+        >ul {
+            display: flex;
+            flex-direction: row;
+            background-color: rgb(0, 0, 195);
+            border-top: solid;
+            border-bottom: solid;
+            >li {
+                :hover {
+                    background-color: blue;
+                }
+                width: 20vw;
+                list-style-type: none;
+                text-align: center;
+                >a {
+                    display: block;
+                    text-decoration: none;
+                    color: lightblue;
+                }
+            }
+        }
+    }
+    main {
+        color: lightblue;
+        width:80vw;
+        margin: auto;
+        padding-top: 5vw;
+        display: flex;
+        flex-direction: column; 
+        .art-container-1 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: 4vw;
+            row-gap: 4vw;
+        }
+        .art-container-2 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: 4vw;
+            row-gap: 4vw;
+        }
+        .art-png {
+            margin-top: 5vh;
+            margin-bottom: 5vh;
+            display: block;
+            border-radius: 10px;
+            padding: 5px;
+        }
+        .art {
+            background-image: radial-gradient(closest-side,  rgb(0, 0, 255) 10%  ,rgb(0, 0, 195)  100%);
+            width: 38vw;
+            border-radius: 10px;
+            > article {
+                >header {
+                    >h3 {
+                        text-align: center;
+                    }
+                }
+                > section {
+                    padding: 5px;
+                }
+            }
+        }
+        .art-head {
+            background-image: radial-gradient(closest-side, rgb(0, 0, 255) , rgb(0, 0, 195) );
+            display: block;
+            height: 190px;
+            padding-left: 8vw;
+            padding-right: 8vw;
+            >header {
+                padding-top: 5px;
+                height: 7vh;
+                line-height: 5vh;
+                >h3 { 
+                    text-align: center;
+                }
+            }
+        }   
+    }
+}
