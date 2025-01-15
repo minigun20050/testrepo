@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+table {
+    width: 100%;
+    border: 1px;
+    border-color: black;
+    border-style: solid;
+    border-collapse: collapse;
+}
+td, th {
+    padding: 5px;
+    text-align: center;
+    border: 1px;
+    border-color: black;
+    border-style: solid;
+}
+#tr {
+    text-align: right;
+}
+#tl {
+    text-align: left;
+}
+#rx {
+    text-decoration-color: aliceblue;
+}
