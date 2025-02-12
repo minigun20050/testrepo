@@ -2,9 +2,9 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="93mm"
-   height="78.365997mm"
-   viewBox="0 0 93 78.36599"
+   width="77mm"
+   height="92mm"
+   viewBox="0 0 77 91.999993"
    version="1.1"
    id="svg1"
    sodipodi:docname="logo no text.svg"
@@ -29,22 +29,21 @@
      inkscape:document-units="mm"
      showguides="true"
      inkscape:zoom="1"
-     inkscape:rotation="-90"
-     inkscape:cx="174.5"
-     inkscape:cy="133"
+     inkscape:cx="139"
+     inkscape:cy="131.5"
      inkscape:window-width="1366"
      inkscape:window-height="705"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="svg1"
      showgrid="false"
      inkscape:export-bgcolor="#ffffff00">
     <inkscape:grid
        id="grid294"
        units="mm"
-       originx="0"
-       originy="0"
+       originx="-9.5061522"
+       originy="-0.39573032"
        spacingx="0.99999998"
        spacingy="1"
        empcolor="#0099e5"
@@ -1053,7 +1052,7 @@
   <g
      id="g1"
      inkscape:label="logo no text"
-     transform="translate(-58.933317,-110.90698)">
+     transform="rotate(-90,19.921667,131.51165)">
     <g
        inkscape:label="Warstwa 1"
        inkscape:groupmode="layer"
@@ -1117,7 +1116,7 @@
          id="rect1530-7"
          style="fill:#000000;stroke-width:2.10109;stroke-dasharray:none"
          transform="matrix(0.98224851,0.18758429,-0.25288925,0.96749523,0,0)"
-         d="m 99.948658,118.64853 c 0.06235,0.0814 0.02727,0.16433 0.04886,0.24904 l 80.127158,0.002 -6e-5,-0.25156 z"
+         d="m 99.948658,118.64853 c 0.06235,0.0814 0.02727,0.16433 0.04886,0.24904 l 80.127162,0.002 -6e-5,-0.25156 z"
          sodipodi:nodetypes="ccccc" />
       <path
          id="rect1530-86"
@@ -1138,7 +1137,7 @@
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:'MV Boli';-inkscape-font-specification:'MV Boli, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;white-space:pre;shape-inside:url(#rect1558);display:inline;opacity:1;fill:#000000;stroke-width:8.69291;stroke-dasharray:none"><tspan
            x="464.1875"
            y="538.4195"
-           id="tspan2">N</tspan></text>
+           id="tspan1">N</tspan></text>
     </g>
     <g
        id="g294"
