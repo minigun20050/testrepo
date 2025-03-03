@@ -1,0 +1,41 @@
+:root {
+    --body-header: 10vh;
+    --nav-hamburger-padding: 5px;
+    --hamburger-border-color: #ccc;
+}
+
+html, body, header, h1, h2, h3, h4, h5, h6, nav, aside, main, article, section, p, form, footer {
+    padding: 0;
+    margin: 0;
+}
+
+body > header {
+    height: var(--body-header);
+}
+
+nav > #nav-hamburger {
+    display: inline-block;
+}
+nav > #nav-hamburger > div {
+    padding: var(--nav-hamburger-padding);
+    border: 1px solid var(--hamburger-border-color);
+    border-radius: 5px;
+    text-align: center;
+}
+nav > #nav-hamburger:hover + ul {
+    display: block;
+}
+nav > ul {
+    display: none;
+}
+
+@media screen and (min-width: 600px) {
+    body > header {
+        height: calc(var(--body-header) * 1.5);
+    }
+}
+@media screen and (min-width: 768px) {
+    nav > #nav-hamburger > div {
+        padding: calc(var(--nav-hamburger-padding) * 2);
+    }
+}
