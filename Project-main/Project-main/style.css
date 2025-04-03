@@ -1,0 +1,249 @@
+/* @font-face {
+  font-family: Bearpaw;
+  src: url(./BEARPAW_.ttf);
+}
+@font-face {
+  font-family: Archistico_Simple;
+  src: url(./Archistico_Simple.ttf);
+} */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: background-color 0.3s, color 0.15s;
+  font-family: Archistico_Simple;
+}
+
+.dark {
+  background-color: rgb(43, 43, 43);
+}
+.light {
+  background-color: rgb(179, 180, 162);
+}
+#logo {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 5px;
+  padding-top: 0.5vh;
+  padding-bottom: 0.5vh;
+  height: 100%;
+}
+/* header ▼ */
+header {
+  flex-direction: row;
+  row-gap: 40vw;
+  height: 15vh;
+  line-height: 14vh;
+}
+.dark header {
+  background-color: rgb(31, 31, 31);
+}
+.light header {
+  background-color: rgb(162, 163, 146);
+}
+/* header ▲ */
+body > header > div {
+  position: absolute;
+  height: 80px;
+  width: 100%;
+  top: 0;
+  text-align: right;
+}
+#themeToggle {
+  display: table-cell;
+  vertical-align: middle;
+  height: 7vh;
+  width: 5vw;
+  margin-right: 0.5vw;
+  border: none;
+  transition: 0.3s;
+}
+.dark #themeToggle {
+  background: url("./todark.png") center no-repeat;
+  background-size: 3vw 3vw;
+}
+.light #themeToggle {
+  background: url("./tolight.png") center no-repeat;
+  background-size: 3vw 3vw;
+}
+.dark #themeToggle:hover {
+  cursor:pointer;
+  background-color: rgb(43, 43, 43);
+}
+.light #themeToggle:hover {
+  cursor:pointer;
+  background-color: rgb(137, 138, 124);
+}
+#login {
+  position: relative;
+  display: table-cell;
+  vertical-align: middle;
+  height: 7vh;
+  width: 8vw;
+  font-size:4vh;
+  margin-right: 1vw;
+  border: none;
+  background: none;
+  text-align: center;
+  text-decoration: none;
+}
+.dark #login {
+  color: rgb(204, 204, 204);
+}
+.light #login {
+  color: rgb(31, 31, 31);
+}
+.dark #login:hover {
+  cursor:pointer;
+  background-color: rgb(43, 43, 43);
+}
+.light #login:hover {
+  cursor:pointer;
+  background-color: rgb(137, 138, 124);
+}
+body > nav {
+  height: 8vh;
+  line-height: 8vh;
+}
+nav > ul {
+  display: flex;
+  flex-direction: row;
+  border-top: solid 2px;
+  border-bottom: solid 2px;
+}
+.dark nav > ul {
+  background-color: rgb(31, 31, 31);
+}
+.light nav > ul {
+  background-color: rgb(162, 163, 146);
+}
+body > nav > ul > li {
+  width: 20vw;
+  list-style-type: none;
+  text-align: center;
+}
+.dark nav > ul > li :hover {
+  background-color: rgb(43, 43, 43);
+}
+.light nav > ul > li :hover {
+  background-color: rgb(137, 138, 124);
+}
+nav > ul > li > a {
+  display: block;
+  text-decoration: none;
+  border-right: solid 2px;
+  border-color: black;
+}
+#firstnavlink {
+  border-left: solid 2px;
+  border-color: black;
+}
+.dark nav > ul > li > a {
+  color: lightblue;
+}
+.light nav > ul > li > a {
+  color: rgb(31, 31, 31);
+}
+main {
+  width: 80vw;
+  margin: auto;
+  padding-top: 5vw;
+  display: flex;
+  flex-direction: column;
+}
+.dark main {
+  color: lightblue;
+}
+.light main {
+  color: rgb(31, 31, 31);
+}
+#art-container-1 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  -moz-column-gap: 4vw;
+       column-gap: 4vw;
+  row-gap: 4vw;
+}
+#art-png {
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  display: block;
+  border-radius: 10px;
+  padding: 5px;
+}
+.art {
+  width: 38vw;
+  border-radius: 10px;
+}
+.dark > .art {
+  background-color: rgb(43, 43, 43);
+}
+.light > .art {
+  background-color: rgb(179, 180, 162);
+}
+.art > article > header {
+  text-align: center;
+  border-radius: 10px;
+}
+.dark > .art > article > header {
+  background-color: rgb(31, 31, 31);
+}
+.light > .art > article > header  {
+  background-color: rgb(162, 163, 146);
+}
+.art > article > section {
+  padding: 5px;
+  line-height: 20px;
+  font-size: large;
+}
+main > header {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  width: auto;
+  text-align: center;
+  margin-bottom: 40px;
+  margin-top: -30px;
+  display: block;
+  height: auto;
+  padding-left: 8vw;
+  padding-right: 8vw;
+  width: 900px;
+  border-radius: 10px;
+}
+.dark main > header {
+  color:lightblue;
+  background-color: rgb(43, 43, 43);
+}
+.light main > header {
+  color:rgb(26, 26, 26);
+  background-color: rgb(179, 180, 162);
+}
+.light main > header > div > header, .light header{
+  background-color: rgb(162, 163, 146);
+}
+body > main > header > div > p {
+  font-size: large;
+  padding-top: 15px;
+  padding-bottom: 25px;
+  line-height: 20px;
+}
+body > main > header > div > header {
+  border-radius: 10px;
+}
+#tu {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+}
+h3 {
+  font-size: 3vh;
+}
+#h3p {
+  line-height: 10vh;
+}
+#h3pl {
+  line-height: 1vh;
+}

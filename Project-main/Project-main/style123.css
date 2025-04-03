@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: background-color 0.3s, color 0.15s;
+    font-family: Archistico_Simple;
+}
+  
+.dark {
+    background-color: rgb(43, 43, 43);
+    color: rgb(173, 216, 230);
+}
+.light {
+    background-color: rgb(179, 180, 162);
+    color: rgb(31, 31, 31);
+}
+#logo {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 5px;
+    padding-top: 0.5vh;
+    padding-bottom: 0.5vh;
+    height: 100%;
+}
+/* header ▼ */
+header {
+    flex-direction: row;
+    row-gap: 40vw;
+    height: 15vh;
+    line-height: 14vh;
+}
+.dark header {
+    background-color: rgb(31, 31, 31);
+}
+.light header {
+    background-color: rgb(162, 163, 146);
+}
+/* header ▲ */
+body > header > div {
+    position: absolute;
+    height: 80px;
+    width: 100%;
+    top: 0;
+    text-align: right;
+}
+#themeToggle {
+    display: table-cell;
+    vertical-align: middle;
+    height: 7vh;
+    width: 5vw;
+    margin-right: 0.5vw;
+    border: none;
+    transition: 0.3s;
+}
+.dark #themeToggle {
+    background: url("./todark.png") center no-repeat;
+    background-size: 3vw 3vw;
+}
+.light #themeToggle {
+    background: url("./tolight.png") center no-repeat;
+    background-size: 3vw 3vw;
+}
+.dark #themeToggle:hover {
+    cursor:pointer;
+    background-color: rgb(43, 43, 43);
+}
+.light #themeToggle:hover {
+    cursor:pointer;
+    background-color: rgb(137, 138, 124);
+}
+#login {
+    position: relative;
+    display: table-cell;
+    vertical-align: middle;
+    height: 7vh;
+    width: 8vw;
+    font-size:4vh;
+    margin-right: 1vw;
+    border: none;
+    background: none;
+    text-align: center;
+    text-decoration: none;
+}
+.dark #login {
+    color: rgb(204, 204, 204);
+}
+.light #login {
+    color: rgb(31, 31, 31);
+}
+.dark #login:hover {
+    cursor:pointer;
+    background-color: rgb(43, 43, 43);
+}
+.light #login:hover {
+    cursor:pointer;
+    background-color: rgb(137, 138, 124);
+}
+body > nav {
+    height: 8vh;
+    line-height: 8vh;
+}
+nav > ul {
+    display: flex;
+    flex-direction: row;
+    border-top: solid 2px black;
+    border-bottom: solid 2px black;
+}
+.dark nav > ul {
+    background-color: rgb(31, 31, 31);
+}
+.light nav > ul {
+    background-color: rgb(162, 163, 146);
+}
+body > nav > ul > li {
+    width: 20vw;
+    list-style-type: none;
+    text-align: center;
+}
+.dark nav > ul > li :hover {
+    background-color: rgb(43, 43, 43);
+}
+.light nav > ul > li :hover {
+    background-color: rgb(137, 138, 124);
+}
+nav > ul > li > a {
+    border-right: solid 2px black;
+    display: block;
+    text-decoration: none;
+}
+#firstnavlink {
+    border-left: solid black 2px;
+}
+.dark nav > ul > li > a {
+    color: lightblue;
+}
+.light nav > ul > li > a {
+    color: rgb(31, 31, 31);
+}
